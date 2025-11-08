@@ -4,7 +4,7 @@ import { SegmentColor } from "../../utils/SegmentColor";
 import { exportToWord } from "../../utils/exportToWord";
 import { PlusCircleFill, CloudArrowDownFill } from "react-bootstrap-icons";
 import s from "./style.module.css";
-import stories from "../../data/stories";
+import storiesData from "../../data/stories";
 import { Button } from "../../components/Button/Button";
 import { StoriesList } from "../../components/StoriesList/StoriesList";
 import { ReadingOutput } from "../../components/ReadingOutput/ReadingOutput";
@@ -15,38 +15,32 @@ import soukoun from "../../assets/skoun.png";
 import { Chakel } from "../../components/Chakel/Chakel";
 
 export function Reading() {
-  const [mode, setMode] = useState("list"); // list | story
-  const [inputText, setInputText] = useState("");
+  const [mode, setMode] = useState("list"); // "list" | "story"
   const [segments, setSegments] = useState([]);
   const [selectedStory, setSelectedStory] = useState(null);
-  const [showAll, setShowAll] = useState(false);
 
+  // S'assurer que stories existe
+  const stories = storiesData || [];
   const defaultStories = stories.filter((s) => !s.userCreated);
   const myStories = stories.filter((s) => s.userCreated);
 
   const handleSelectStory = (story) => {
     setSelectedStory(story);
-    setInputText(story.text);
-    setSegments(SegmentColor(story.text));
+    setSegments(SegmentColor(story?.text || ""));
     setMode("story");
   };
 
-  const handleBack = () => {
-    setMode("list");
-    setSelectedStory(null);
-    setInputText("");
-  };
-
-  // Liste des chakls
+  // Liste des chakels
   const chakels = [
     { name: "الفَتْحَة", color: "#ff0073", img: fatha },
     { name: "الكَسْرَة", color: "#009bee", img: kasra },
     { name: "الضَمَّة", color: "#04cf1f", img: dhamma },
     { name: "السُّكُون", color: "#962dc0", img: soukoun },
   ];
+
   return (
     <Container className={s.container}>
-      {/* === MODE PAR DÉFAUT === */}
+      {/* === MODE LISTE DES CONTES === */}
       {mode === "list" && (
         <>
           <Row>
@@ -62,7 +56,7 @@ export function Reading() {
             <Col xs={12} md={6} lg={6}>
               <div className={s.listBox}>
                 <StoriesList
-                  stories={defaultStories}
+                  stories={myStories}
                   title="✍️ Mes contes"
                   onSelect={handleSelectStory}
                 />
@@ -83,7 +77,7 @@ export function Reading() {
       )}
 
       {/* === MODE CONTE CHOISI === */}
-      {mode === "story" && (
+      {mode === "story" && selectedStory && (
         <Row>
           {/* COLONNE GAUCHE */}
           <Col lg={4}>
@@ -112,14 +106,17 @@ export function Reading() {
                     name={c.name}
                     color={c.color}
                     img={c.img}
-                    size="22px"
+                    size={22} // passer en number pour éviter problème
                   />
                 </Col>
               ))}
             </Row>
+
             <Row className={s.titleRow}>
               <div className={s.title}>
-                <ReadingOutput segments={SegmentColor(selectedStory?.title)} />
+                <ReadingOutput
+                  segments={SegmentColor(selectedStory?.title || "")}
+                />
               </div>
             </Row>
 

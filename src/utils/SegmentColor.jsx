@@ -214,7 +214,7 @@ export function SegmentColor(paragraph) {
         consonne.includes(nextChar) &&
         consonne.includes(testChaklNextChar) &&
         chaklTab.includes(after) &&
-        after != "ْ" // Sukoon
+        after !== "ْ" // Sukoon
       ) {
         syllable = currentChar + testChaklCurrentChar + nextChar;
         color = colors.special; // même couleur que Sukūn

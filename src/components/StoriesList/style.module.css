@@ -39,8 +39,7 @@
 
 
   .sidebar {
-    min-height: auto;
-
+    height: auto;
   }
 }
 .showMoreLink {

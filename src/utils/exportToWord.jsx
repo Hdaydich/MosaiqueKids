@@ -278,7 +278,6 @@ export const exportToWord = async (segments) => {
             border: {
               bottom: {
                 color: "C0C0C0",
-                space: 1,
                 size: 6,
                 style: BorderStyle.SINGLE,
                 space: 400, // espace entre le texte et la bordure en twips

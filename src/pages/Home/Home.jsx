@@ -11,15 +11,17 @@ export function Home() {
 
   // Scroll fluide vers ItemList
   const scrollToItemList = () => {
-    itemListRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (itemListRef.current) {
+      itemListRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <Container className={s.mainContainer}>
+    <Container className={s.mainContainer} fluid="true">
       {/* 🎨 HERO */}
       <Row className={`${s.hero} align-items-center`}>
         <Col xs={12} lg={6} className="text-center text-lg-start">
-          <h1>🌈 Apprendre devient un jeu d’enfant </h1>
+          <h1>🌈 Apprendre devient un jeu d’enfant</h1>
           <p className={s.heroText}>
             Des activités ludiques, colorées et stimulantes pour éveiller chaque
             enfant à son rythme.
@@ -28,6 +30,7 @@ export function Home() {
             Découvrir maintenant
           </Button>
         </Col>
+
         <Col xs={12} lg={6} className="text-center mt-4 mt-lg-0">
           <img src={kids} alt="Enfants apprenant" className={s.kidsImg} />
         </Col>
@@ -35,7 +38,7 @@ export function Home() {
 
       {/* 🌟 ACTIVITÉS */}
       <section ref={itemListRef} className={s.activitiesSection}>
-        <h1>Nos activités Mosaïque </h1>
+        <h1>Nos activités Mosaïque</h1>
         <p className={s.sectionText}>
           Explore les univers qui développent la curiosité, la mémoire et la
           joie d’apprendre.

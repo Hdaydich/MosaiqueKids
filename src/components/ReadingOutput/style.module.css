@@ -1,7 +1,6 @@
 .scrollContainer {
   max-height: 60vh; /* zone visible */
   overflow-y: scroll; /* permet le scroll */
-  scrollbar-width: none; /* 🔹 masque sur Firefox */
   -ms-overflow-style: none; /* 🔹 masque sur IE et Edge anciens */
 }
 

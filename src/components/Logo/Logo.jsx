@@ -1,7 +1,5 @@
 import s from "./style.module.css";
-import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { Col } from "react-bootstrap";
 export function Logo({
   subtitle,
   width = 100,
@@ -9,7 +7,6 @@ export function Logo({
   align = "center",
   marg = "auto",
 }) {
-  const navigate = useNavigate();
   return (
     <div className={s.logoContainer} style={{ alignItems: align }}>
       <img

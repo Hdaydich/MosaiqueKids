@@ -1,8 +1,8 @@
 import s from "./style.module.css";
-import { Card, CardFooter, Nav } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-export function Item({ title, subtitle, content, bgc, bgcff, img, direction }) {
+export function Item({ title, subtitle, content, bgc, img, direction }) {
   const navigate = useNavigate();
   const handleRedirect = (direction) => {
     navigate(direction); //
