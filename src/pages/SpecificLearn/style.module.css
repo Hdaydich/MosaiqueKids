@@ -1,0 +1,91 @@
+.levelBtn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  min-width: 80%;
+  text-align: center;
+}
+
+.level1 {
+  background-color: #4caf50;
+}
+.level2 {
+  background-color: #ff9800;
+}
+.level3 {
+  background-color: #f44336;
+}
+
+.levelBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.itemContainer {
+  border-radius: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  width: 300px;
+  min-height: 200px;
+}
+
+.itemContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.topButton {
+  transition: transform 0.2s;
+}
+
+.topButton:hover {
+  transform: scale(1.1);
+}
+
+.shapeItem {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.2s;
+}
+
+.shapeItem:hover {
+  transform: scale(1.05);
+}
+
+.themeContainer{
+    margin: 0px auto ;
+    text-Align: center ;
+    background: #dff7f7;
+    padding: 30px 80px;
+    border-top-left-radius:45px ;
+    border-top-right-radius:45px ;
+}
+
+@media only screen and (max-width: 768px) {
+ .themeContainer{
+  margin-top: 0px;
+    padding: 0px 20px;
+    min-height: 50vh;
+    border-radius: 20px;
+}
+
+}
+

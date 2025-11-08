@@ -1,0 +1,163 @@
+/* === Container général === */
+.memoryContainer {
+  border-radius: 20px;
+  padding: 25px;
+  padding-bottom: 0px;
+  background-color: #dff7f7;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.scoreCard {
+  background: #feffef;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px 10px; 
+  border: none;
+  width: 100%;
+  margin: 10px auto;
+}
+.levelBtn {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+.level1 {
+  background-color: #4caf50;
+}
+.level2 {
+  background-color: #ff9800;
+}
+.level3 {
+  background-color: #f44336;
+}
+
+.levelBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Grilles par niveau === */
+.gridLevel1 {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.gridLevel2 {
+  margin: 0 auto ;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.gridLevel3 {
+  margin: 0 auto ;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  gap: 6px;
+  justify-items: center;
+}
+
+/* === Cartes === */
+.card {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 12px;
+  perspective: 600px; /* pour animation flip future */
+}
+
+.card img,
+.card .back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.back {
+  background: #4e4e4e;
+}
+
+/* === Message de victoire === */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modalBox {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+  max-width: 300px;
+  width: 90%;
+}
+
+/* === Score et timer === */
+.d-flex.last {
+  font-weight: bold;
+  gap: 15px;
+}
+
+/* === Animation fadeIn modal === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* === Responsive === */
+@media (max-width: 950px) {
+  .gridLevel1 .card { width: 90px; height: 90px; }
+  .gridLevel2 .card { width: 90px; height: 90px; }
+  .gridLevel3 .card { width: 80px; height: 80px; }
+  .levelBtn { font-size: 0.9rem; padding: 8px 12px; min-width: 90px; }
+}
+
+@media (max-width: 680px) {
+  .controls {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .gridLevel2 { grid-template-columns: repeat(3, 1fr); }
+  .gridLevel3 { grid-template-columns: repeat(4, 1fr); }
+  .card { width: 55px; height: 55px; }
+  .memoryContainer {
+    margin-top: 20px;
+  width: 100%;
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Title SEO -->
+    <title>MOSAIQUE | Chaque enfant, une pièce unique</title>
+    <meta name="description" content="MOSAIQUE | Chaque enfant, une pièce unique" />
+    <meta name="author" content="Hend Abbassi" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MOSAIQUE | Chaque enfant, une pièce unique" />
+    <meta property="og:description" content="Mosaique, la plateforme éducative qui aide les enfants avec des troubles d’apprentissage et de l’attention à s’épanouir grâce à des jeux et des activités adaptées" />
+    <meta property="og:image" content="https://hend-abbassi.vercel.app/preview.png" />
+    <meta property="og:url" content="https://hend-abbassi.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MOSAIQUE | Chaque enfant, une pièce unique" />
+    <meta name="twitter:description" content="Mosaique, la plateforme éducative qui aide les enfants avec des troubles d’apprentissage et de l’attention à s’épanouir grâce à des jeux et des activités adaptées" />
+    <meta name="twitter:image" content="https://hend-abbassi.vercel.app/preview.png" />
+
+    <!-- Manifest / PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.png" />
+
+    <!-- Google Fonts pour l’arabe -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH6+4T1Jp5kqDSh1+2rYyNQXGvJhe4d1TRzBZyXUu8w3/1BQpF2rMZt7bF3b4rQF" crossorigin="anonymous">
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="/static/css/main.css" />
+
+    <!-- Police arabe locale (optionnel mais recommandé sur Vercel) -->
+    <style>
+      @font-face {
+        font-family: 'Amiri';
+        src: url('/fonts/Amiri-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* Styles globaux pour texte arabe */
+      .rtl-text {
+        font-family: 'Amiri', serif !important;
+        direction: rtl;
+        text-align: right;
+        letter-spacing: 0;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    </style>
+
+    <meta name="google-site-verification" content="6SeOaZzDlQmXHMACU4sma_LWUxhdZpVWNLbtzFDXi30" />
+  </head>
+
+  <body>
+    <noscript>Vous devez activer JavaScript pour exécuter cette application.</noscript>
+
+    <div id="root"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUa6Yh+e2f+vNfK6u+M0tFkOz8c/0mK1RwQh1/yOV1gZ7zzrE0b1myGp+p6F" crossorigin="anonymous"></script>
+  </body>
+</html>

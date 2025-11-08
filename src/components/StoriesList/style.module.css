@@ -1,0 +1,58 @@
+
+.sidebar {
+  background-color: rgba(240, 255, 215, 0.858);
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  font-size: 22px;
+  min-height: 250px;
+  height: auto;
+  width: 90%;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: right;
+}
+
+/* Titres sidebar */
+.sidebarTitle {
+  font-weight: 600;
+  color: #007a8c;
+  padding: 20px 0px;
+  border-bottom: 1px solid #00798c62;
+  text-align: center;
+  margin: 0px;
+}
+
+/* Contes dans sidebar */
+.sidebarStory {
+  cursor: pointer;
+  transition: all 0.2s;
+  padding:10px 20px;
+  border-bottom: 1px solid #ffffff;
+  background-color:rgba(255, 255, 255, 0.514);
+}
+
+.sidebarStory:hover {
+  background-color: #ffffffbd;
+}
+/* Responsive */
+@media (max-width: 768px) {
+
+
+  .sidebar {
+    min-height: auto;
+
+  }
+}
+.showMoreLink {
+  text-align: center;
+  color: #0056b3;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.showMoreLink:hover {
+  color: #fcd125;
+}

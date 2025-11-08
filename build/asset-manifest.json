@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3276b22.css",
+    "main.js": "/static/js/main.0c6c2bc2.js",
+    "static/media/kids.png": "/static/media/kids.362d194cb0206ba7361c.png",
+    "static/media/logo.png": "/static/media/logo.c125112f1192b3e25e82.png",
+    "static/media/dys.png": "/static/media/dys.8c856a1afe0da98cd139.png",
+    "static/media/raisin.png": "/static/media/raisin.117f07618655bbb301fc.png",
+    "static/media/ceriseRaisin.png": "/static/media/ceriseRaisin.88733d41408a1f55c452.png",
+    "static/media/raisonPomme.png": "/static/media/raisonPomme.f7a4e52505c1f6594bfa.png",
+    "static/media/bear1.png": "/static/media/bear1.a3530492c6cd0d925bfd.png",
+    "static/media/bear3.png": "/static/media/bear3.22654c5b698f58942ddd.png",
+    "static/media/orange.png": "/static/media/orange.55fbf690b0f485e2b8aa.png",
+    "static/media/orangePasteque.png": "/static/media/orangePasteque.9cfc83f7a8ce64ec59d1.png",
+    "static/media/bear2.png": "/static/media/bear2.79ba9a027b953bc8fd6d.png",
+    "static/media/cerise.png": "/static/media/cerise.111eabe10d461b748692.png",
+    "static/media/kiwi.png": "/static/media/kiwi.6e3bb8d6c197eeadabd0.png",
+    "static/media/pasterqueCerise.png": "/static/media/pasterqueCerise.6af6bc59ec72f3919aed.png",
+    "static/media/orangePomme.png": "/static/media/orangePomme.d9616d5b55612a99e468.png",
+    "static/media/caring.png": "/static/media/caring.a6da607fb2fb17475fb7.png",
+    "static/media/pasteque.png": "/static/media/pasteque.730759521bcc985809d0.png",
+    "static/media/livre.png": "/static/media/livre.3729277df94948a4ac72.png",
+    "static/media/fatha.png": "/static/media/fatha.3f6419ab5b4eb62e72fa.png",
+    "static/media/pomme.png": "/static/media/pomme.1a149687b5e77965e076.png",
+    "static/media/skoun.png": "/static/media/skoun.3a472d0c744f35ff96d8.png",
+    "static/media/kasra.png": "/static/media/kasra.ee0f908d8a54807ab737.png",
+    "static/media/dhamma.png": "/static/media/dhamma.4d4a28b4d0530e3ac152.png",
+    "static/media/jeux.png": "/static/media/jeux.4f874bf4ced00a0b61d4.png",
+    "static/media/fathaWord.png": "/static/media/fathaWord.990624ce1549bf50d573.png",
+    "static/media/kasraWord.png": "/static/media/kasraWord.af43b77dfeff62b95fcf.png",
+    "static/media/soukounWord.png": "/static/media/soukounWord.e4bea77136484284b582.png",
+    "static/media/dhammaWord.png": "/static/media/dhammaWord.89e7477b29712ed19c32.png",
+    "index.html": "/index.html",
+    "main.f3276b22.css.map": "/static/css/main.f3276b22.css.map",
+    "main.0c6c2bc2.js.map": "/static/js/main.0c6c2bc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3276b22.css",
+    "static/js/main.0c6c2bc2.js"
+  ]
+}

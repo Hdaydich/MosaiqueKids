@@ -1,0 +1,88 @@
+.gameCard {
+  background-color: #dff7f7;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin: 0 auto;
+}
+
+.gridBox {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px ;
+  text-align: center;
+}
+
+.modelGrid {
+  background: #fffaf0;
+}
+
+.grid {
+  display: grid;
+  gap: 8px;
+  justify-content: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #e4e4e4;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+.colorGrid {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.colorSwatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.colorSwatch:hover {
+  transform: scale(1.15);
+  border-color: #666;
+}
+
+.active {
+  transform: scale(1.1);
+  border-color: #000;
+}
+
+.scoreCard {
+  background: #feffef;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px 10px; 
+  border: none;
+  width: 100%;
+}
+.modal-content {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .cell {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+}

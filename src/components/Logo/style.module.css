@@ -1,0 +1,25 @@
+.logoContainer {
+  display: flex;
+  flex-direction: column; /* logo au-dessus du texte */
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif; /* ou ta police préférée */
+  font-weight:lighter;
+}
+
+ @media only screen and (max-width: 991px) {
+.logoContainer {
+align-items: left;
+}
+        }
+
+
+ @media only screen and (max-width: 600px) {
+.logoContainer {
+align-items: center;
+}
+        }

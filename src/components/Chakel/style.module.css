@@ -1,0 +1,30 @@
+.CardContainer {
+    cursor: pointer;
+    height: auto;
+    padding: 5px;        
+    margin: 0 auto;         
+    width: 150px;        
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.CardContainer img {
+    height: 80px;          
+    object-fit: contain;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .icon {
+        display: none;
+    }
+    .CardContainer {
+    margin: 0px auto;
+    padding: 0px;
+}
+}

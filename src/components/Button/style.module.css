@@ -1,0 +1,128 @@
+/* === Style global commun pour tous les boutons === */
+.button {
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 16px;
+  border: none;
+  transition: all 0.2s ease;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/* === Boutons principaux (action) === */
+.addButton {
+  background: #0a9848;  /* Bleu foncé poudré */
+  color: #e9ffe6;       /* Texte clair */
+}
+.addButton:hover {
+  background: #00c756;
+}
+
+/* === Erreur / Alerte === */
+.errorButton {
+  background: #b21010;  /* Rouge foncé poudré */
+  color: #ffdada;       /* Texte clair */
+}
+.errorButton:hover {
+  background: rgb(184, 6, 6);
+}
+
+/* === Confirmation / positif === */
+.confirmButtonSmall {
+ background: #06ad22;  /* Bleu foncé poudré */
+  color: #e9ffe6;       /* Texte clair */
+}
+.confirmButtonSmall:hover {
+  background: rgb(44, 176, 14);
+}
+
+/* === Retour / neutre === */
+.backButtonSmall {
+  background: #4b4f58;  /* Gris bleu foncé */
+  color: #e7edf2;
+}
+.backButtonSmall:hover {
+  background: #3d4149;
+}
+
+/* === Téléchargement / action secondaire === */
+.downloadCuteButton {
+  background: #1f506f;  /* Bleu pétrole doux */
+  color: #d0f0fd;
+}
+.downloadCuteButton:hover {
+  background: #1a4360;
+}
+
+/* === Niveaux du jeu === */
+
+/* ✅ Facile */
+.success {
+  background: #29c731;  /* Vert foncé */
+  color: #ffffff;
+}
+.success:hover {
+  background: rgb(14, 166, 27);
+}
+
+.outlineSuccess {
+  background: #29c731;  /* Vert foncé */
+  color: #ffffff;
+}
+.outlineSuccess:hover {
+  background: rgb(14, 166, 27);
+}
+
+/* ⚠️ Moyen */
+.warning {
+  background: #e9a30d;  /* Jaune foncé / doré */
+  color: #ffffff;
+}
+.warning:hover {
+  background: #d89e00;
+}
+
+.outlineWarning {
+  background: #e9a30d;  /* Jaune foncé / doré */
+  color: #ffffff;
+}
+.outlineWarning:hover {
+  background: #d89e00;
+}
+/* ❌ Difficile */
+.danger {
+  background: #dc0909;  /* Rouge foncé */
+  color: #ffffff;
+}
+.danger:hover {
+  background: #f10303;
+}
+
+.outlineDanger {
+  background: #dc0909;  /* Rouge foncé */
+  color: #ffffff;
+}
+.outlineDanger:hover {
+  background: #f10303;
+}
+
+/* === Icônes dans boutons === */
+.buttonIcon {
+  font-size: 22px;
+  opacity: 0.85;
+}

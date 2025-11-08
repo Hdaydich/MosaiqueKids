@@ -1,0 +1,138 @@
+.container {
+  width: 95%;
+}
+
+.titleRow{
+  text-align: center;
+  background-color: #fffde2b9;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-Shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(150, 150, 150, 0.292);
+}
+.chakelRow {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: -50px;
+}
+
+.chakelCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+
+.listBox{
+  min-height: 45vh;
+  text-align: center;
+  margin: 0px auto;
+}
+/* === MODE PAR DÉFAUT === */
+.topLists {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+/* === MODE CONTE CHOISI === */
+.storyLayout {
+  display: flex;
+  gap: 1rem;
+  height: 85vh;
+}
+
+
+.listHalf {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* --- Colonne droite --- */
+.rightColumn {
+  width: 65%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.storyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.storyHeader h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #ff0073;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.backBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Résultat texte */
+.resultBox {
+  flex: 1;
+  overflow-y: auto;
+  background: #fffdf5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1rem;
+  font-size: 22px;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+   box-Shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(150, 150, 150, 0.292);
+}
+
+
+.downloadBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.showMoreLink {
+  text-align: center;
+  color: #6a6a6a;
+  font-size: 20px;
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+/* --- Mobile --- */
+@media only screen and (max-width: 767px) {
+
+.listBox{
+  min-height: 30vh;
+  margin: 20px auto;
+}
+.chakelRow {
+  width: 90%;
+  margin: 20px auto;
+}
+}

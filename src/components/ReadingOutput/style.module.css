@@ -1,0 +1,30 @@
+.scrollContainer {
+  max-height: 60vh; /* zone visible */
+  overflow-y: scroll; /* permet le scroll */
+  scrollbar-width: none; /* 🔹 masque sur Firefox */
+  -ms-overflow-style: none; /* 🔹 masque sur IE et Edge anciens */
+}
+
+/* 🔹 masque la barre sur Chrome / Edge / Safari */
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.textBlock {
+  font-size: 30px;
+  line-height: 2.1;
+  direction: rtl;
+  color: #222;
+  font-family: "Comic Neue", "Noto Sans Arabic", sans-serif;
+}
+
+.segment {
+  display: inline;
+}
+
+.emptyText {
+  text-align: center;
+  font-size: 22px;
+  color: #aaa;
+  margin-top: 2rem;
+}

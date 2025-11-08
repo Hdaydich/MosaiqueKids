@@ -1,0 +1,38 @@
+
+.gameCard {
+  border-radius: 20px;
+  background-color: #dff7f7;
+  width: auto;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.gridBox {
+  background:transparent;
+  border: none;
+}
+
+
+.scoreCard {
+  background: #feffef;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px 10px; 
+  border: none;
+  width: 100%;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+.gridBox {
+  width: 100%;
+}
+.gameCard {
+  padding: 5px;
+}
+
+.scoreCard {
+  padding: 20px auto; 
+  width: 90%;
+}
+}

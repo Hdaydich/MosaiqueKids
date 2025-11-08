@@ -1,0 +1,47 @@
+
+.navbar {
+ padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* 🔗 Liens du menu */
+.navLink {
+  color: #007a8c !important;
+  font-size: 1.05rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+
+.navLink:hover {
+  color: #ff6f61 !important;
+  transform: scale(1.05);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* 👤 Icône du profil */
+.icon {
+  color: #007a8c;
+  transition: all 0.2s ease;
+}
+
+.icon:hover {
+  color: #ff6f61;
+  transform: scale(1.2);
+}
+
+/* 📱 Hamburger menu */
+.navbar-toggler {
+  background-color: #00b4d8 !important;
+  border-radius: 8px;
+  padding: 6px 10px;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* rend les lignes blanches visibles */
+}
